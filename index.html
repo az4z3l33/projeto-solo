@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <title>Login</title>
@@ -22,17 +23,19 @@
                 <form action="cadastro.php" method="post">
 
                     <div class="campo">
-                        <label for="imail">e-mail</label>
+                        <span class="material-symbols-outlined">person</span>
+                        <label for="imail"></label>
                         <input type="email" name="email" id="imail" placeholder="seu email" required maxlength="30" autocomplete="email">
                     </div>
 
                     <div class="campo">
-                        <label for="isenha">senha</label>
+                        <span class="material-symbols-outlined">lock</span>
+                        <label for="isenha"></label>
                         <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="20" autocomplete="current-password">
                     </div>
 
-                    <input type="submit" value="Entrar">
-                    <a href="esqueci.html">Esqueci minha senha</a>
+                        <input type="submit" value="Entrar">
+                        <a href="esqueci.html" class="botao">Esqueci minha senha</a>
                 </form>
             </div>
         </section>
